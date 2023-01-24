@@ -17,6 +17,8 @@ def reverse_number(num):
     save = save * 10 + 4
     1234 // 10 = 123
     loop
+    :param num: the number to reverse
+    :return: the reversed number
     """
     save = 0
     mod = 0
@@ -30,6 +32,8 @@ def reverse_number(num):
 def is_palindrome_number(num):
     """
     Given a number, determine if it is palindromic
+    :param num: the number to check
+    :return: true = is palindrome, false = is not palindrome
     """
     return num == reverse_number(num)
 

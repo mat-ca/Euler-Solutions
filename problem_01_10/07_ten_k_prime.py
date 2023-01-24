@@ -9,8 +9,10 @@ What is the 10,001st prime number?
 
 
 def is_prime(number):
-    # Given a number, check if it is prime.
-    # Returns true = is prime, returns false, is not prime
+    """
+    Given a number, check if it is prime.
+    Returns true = is prime, returns false, is not prime
+    """
     prime_count = 0
     for x in range(1, number + 1):
         if (number % x == 0):

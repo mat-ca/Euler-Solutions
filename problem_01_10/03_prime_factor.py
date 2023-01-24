@@ -8,8 +8,11 @@ What is the largest prime factor of the number 600851475143?
 
 
 def is_prime(number):
-    # Given a number, check if it is prime.
-    # Returns true = is prime, returns false, is not prime
+    """
+    Given a number, check if it is prime.
+    :param number: The number if it is prime or not
+    :return: true = is prime, false = is not prime
+    """
     prime_count = 0
     for x in range(1, number + 1):
         if (number % x == 0):
@@ -20,6 +23,11 @@ def is_prime(number):
 
 
 def find_first_prime_factor(number):
+    """
+    Finds the first prime factor of a number.
+    :param number: The number to find the first prime factor of.
+    :return: The first prime factor of the number.
+    """
     for x in range(1, number):
         if (number % x == 0):
             # x is factor of number

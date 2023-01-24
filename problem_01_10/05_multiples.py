@@ -9,6 +9,11 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 
 def factorial(number):
+    """
+    Calculates the factorial of a number
+    :param number: The number to calculate the factorial of
+    :return: The factorial of the number
+    """
     result = 1
     for i in range(1, number+1):
         result = result * i
